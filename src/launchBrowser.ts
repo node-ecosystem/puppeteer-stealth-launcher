@@ -15,26 +15,26 @@ puppeteer.use(
   }) as any
 )
 
-const launchBrowser = async (options: LaunchOptions = {}): Promise<Browser> => {
-  const { headless = false } = options
-  let args: string[]
+const launchBrowser = async (options: LaunchOptions & { hide?: boolean } = {}): Promise<Browser> => {
+  const { headless = false, hide = true } = options
+  const args = [
+    '--no-sandbox',
+    '--disable-setuid-sandbox',
+    '--disable-search-engine-choice-screen',
+    '--disable-dev-shm-usage'
+  ]
+  if (hide) {
+    // Move the browser window off-screen to avoid user interaction
+    args.push('--window-position=-2400,-2400')
+  }
   if (options.args) {
-    args = options.args
+    args.push(...options.args)
     delete options.args
-  } else {
-    args = []
   }
 
   return puppeteer.launch({
     headless,
-    args: [
-      '--no-sandbox',
-      '--disable-setuid-sandbox',
-      '--disable-search-engine-choice-screen',
-      '--disable-dev-shm-usage',
-      '--window-position=-2400,-2400', // Move the browser window off-screen to avoid user interaction
-      ...args
-    ],
+    args,
     ...options
   })
 }

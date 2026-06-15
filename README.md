@@ -33,6 +33,7 @@ import launchBrowser from 'puppeteer-stealth-launcher'
 const browser = await launchBrowser({
   headless: false, // Default is false
   args: ['--start-maximized'] // Additional launch arguments
+  hide: false // Disable hide browser window
 })
 
 const page = await browser.newPage()
@@ -51,12 +52,12 @@ The `launchBrowser(options)` function accepts an optional configuration object a
 Default values:
 
 - `headless` *(boolean)*: Whether to run the browser in headless mode. Default to `false`.
+- `hide` *(boolean)*: Use argument `--window-position=-2400,-2400` to move the browser window off-screen and avoid user interaction. Default to `true`.
 - `args` *(string[])*: Additional command line arguments to pass to the browser instance. Default to essential arguments:
   - `--no-sandbox`
   - `--disable-setuid-sandbox`
   - `--disable-search-engine-choice-screen`
   - `--disable-dev-shm-usage`
-  - `--window-position=-2400,-2400`
 
 ## 📄 License
 
