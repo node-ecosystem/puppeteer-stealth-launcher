@@ -1,7 +1,7 @@
 import launchBrowser from './src/index.ts'
 
-const browser = await launchBrowser().then((browser) => {
-  console.log('🚀 Started Puppeteer')
-  return browser
-})
+const browser = await launchBrowser()
+
+console.log('🚀 Started Puppeteer')
+
 await browser.close()

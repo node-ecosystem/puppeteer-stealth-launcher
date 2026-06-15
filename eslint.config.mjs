@@ -17,6 +17,7 @@ export default pluginTypescript.config(
       'unicorn/no-empty-file': 0,
       'unicorn/no-keyword-prefix': 0,
       'unicorn/no-null': 0,
+      'unicorn/no-top-level-side-effects': 0,
       'unicorn/numeric-separators-style': 0,
       'unicorn/prefer-node-protocol': 0,
       'unicorn/prevent-abbreviations': 0
