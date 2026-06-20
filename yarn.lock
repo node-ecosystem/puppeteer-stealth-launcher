@@ -1499,9 +1499,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-unicorn@npm:^66.0.0":
-  version: 66.0.0
-  resolution: "eslint-plugin-unicorn@npm:66.0.0"
+"eslint-plugin-unicorn@npm:^68.0.0":
+  version: 68.0.0
+  resolution: "eslint-plugin-unicorn@npm:68.0.0"
   dependencies:
     "@babel/helper-validator-identifier": "npm:^7.29.7"
     "@eslint-community/eslint-utils": "npm:^4.9.1"
@@ -1521,7 +1521,7 @@ __metadata:
     strip-indent: "npm:^4.1.1"
   peerDependencies:
     eslint: ">=10.4"
-  checksum: 10c0/f8e98caf8d9e85ee31c250c39bcdd039d17eb55f8a05c1a0a100f904f0d9fa21389b00136c6105603f9bb0d5c5b49051e5a277351bed625c28d90d588e92a7dd
+  checksum: 10c0/28c123b71d541d32ed1586e6962a6cdca72c70e776141aef63609fd560d16c2f805ff4ff8dccd8d3a66afc65dbfe3c45a1a9e65ebb9703b2082147fb44a2e35e
   languageName: node
   linkType: hard
 
@@ -2425,7 +2425,7 @@ __metadata:
     "@zorilla/puppeteer-extra-plugin-user-data-dir": "npm:^1.0.2"
     "@zorilla/puppeteer-extra-plugin-user-preferences": "npm:^1.0.2"
     eslint: "npm:^10.5.0"
-    eslint-plugin-unicorn: "npm:^66.0.0"
+    eslint-plugin-unicorn: "npm:^68.0.0"
     puppeteer: "npm:^25.1.0"
     tsdown: "npm:^0.22.2"
     typescript: "npm:^6.0.3"
