@@ -37,12 +37,12 @@
   "devDependencies": {
     "@types/node": "^25.9.3",
     "@yarnpkg/sdks": "^3.3.0",
-    "eslint": "^10.5.0",
+    "eslint": "^10.6.0",
     "eslint-plugin-unicorn": "^66.0.0",
-    "puppeteer": "^25.1.0",
-    "tsdown": "^0.22.2",
+    "puppeteer": "^25.2.1",
+    "tsdown": "^0.22.3",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.61.0"
+    "typescript-eslint": "^8.62.0"
   },
   "peerDependencies": {
     "puppeteer": "*"
